@@ -46,7 +46,7 @@
 	    fn_layer {
 			bindings = <
 	/*ESC*/ &trans /*1*/ &trans /*2*/ &trans /*3*/ &trans /*4*/ &trans /*5*/ &trans /*6*/ &trans /*7*/ &trans /*8*/ &trans /*9*/ &trans /*0*/ &trans /*-*/ &bt BT_SEL 0 /*=*/ &bt BT_NXT /*BACKSPACE*/ &bt BT_CLR
-	/*TAB*/ &transL /*Q*/ &trans /*W*/ &trans /*E*/ &trans /*R*/ &trans /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
+	/*TAB*/ &trans /*Q*/ &trans /*W*/ &trans /*E*/ &trans /*R*/ &trans /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
 	/*CAPS*/ &trans /*A*/ &trans /*S*/ &trans /*D*/ &trans /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
 	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
 	/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &trans /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans
