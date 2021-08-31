@@ -29,7 +29,7 @@
 	/*TAB*/ &kp TAB /*Q*/ &kp Q /*W*/ &kp W /*E*/ &kp E /*R*/ &kp R  /*T*/ &kp T /*Y*/ &kp Y /*U*/ &kp U /*I*/ &kp I /*O*/ &kp O /*P*/ &kp P /*[*/ &kp LBKT /*]*/ &kp RBKT /*BSLH*/ &kp BSLH
 	/*CAPS*/ &lt 1 CLCK /*A*/ &kp A /*S*/ &kp S /*D*/ &kp D /*F*/ &kp F /*G*/ &kp G /*H*/ &kp H /*J*/ &kp J /*K*/ &kp K /*L*/ &kp L /*;*/ &kp SEMI /*'*/ &kp SQT /*ENTER*/ &kp RET
 	/*LSHFT*/ &kp LSHFT /*Z*/ &kp Z /*X*/ &kp X /*C*/ &kp C /*V*/ &kp V  /*B*/ &kp B /*N*/ &kp N /*M*/ &kp M /*,*/ &kp COMMA /*.*/ &kp DOT /*FSLH*/ &kp FSLH /*RSHFT*/ &mt RSHFT UP
-	/*LCTRL*/ &kp LCTRL /*LWIN*/ &kp LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &lt 1 DOWN /*RCTRL*/ &mt RCTRL RIGHT
+	/*LCTRL*/ &kp LCTRL /*LWIN*/ &kp LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &lt 2 DOWN /*RCTRL*/ &mt RCTRL RIGHT
 			>;
 		};
 
@@ -38,6 +38,16 @@
 	/*ESC*/ &kp GRAVE /*1*/ &kp F1 /*2*/ &kp F2 /*3*/ &kp F3 /*4*/ &kp F4 /*5*/ &kp F5 /*6*/ &kp F6 /*7*/ &kp F7 /*8*/ &kp F8 /*9*/ &kp F9 /*0*/ &kp F10 /*-*/ &kp F11 /*=*/ &kp F12 /*BACKSPACE*/ &trans
 	/*TAB*/ &kp DEL /*Q*/ &kp HOME /*W*/ &kp UP /*E*/ &kp END /*R*/ &kp BSPC /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
 	/*CAPS*/ &trans /*A*/ &kp LEFT /*S*/ &kp DOWN /*D*/ &kp RIGHT /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
+	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
+	/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &trans /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans
+			>;
+		};
+		
+	    fn_layer {
+			bindings = <
+	/*ESC*/ &trans /*1*/ &trans /*2*/ &trans /*3*/ &trans /*4*/ &trans /*5*/ &trans /*6*/ &trans /*7*/ &trans /*8*/ &trans /*9*/ &trans /*0*/ &trans /*-*/ &bt BT_SEL 0 /*=*/ &bt BT_NXT /*BACKSPACE*/ &bt BT_CLR
+	/*TAB*/ &transL /*Q*/ &trans /*W*/ &trans /*E*/ &trans /*R*/ &trans /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
+	/*CAPS*/ &trans /*A*/ &trans /*S*/ &trans /*D*/ &trans /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
 	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
 	/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &trans /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans
 			>;
