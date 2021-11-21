@@ -29,7 +29,7 @@
 	/*TAB*/ &kp TAB /*Q*/ &kp Q /*W*/ &kp W /*E*/ &kp E /*R*/ &kp R  /*T*/ &kp T /*Y*/ &kp Y /*U*/ &kp U /*I*/ &kp I /*O*/ &kp O /*P*/ &kp P /*[*/ &kp LBKT /*]*/ &kp RBKT /*BSLH*/ &kp BSLH
 	/*CAPS*/ &lt 1 CLCK /*A*/ &kp A /*S*/ &kp S /*D*/ &kp D /*F*/ &kp F /*G*/ &kp G /*H*/ &kp H /*J*/ &kp J /*K*/ &kp K /*L*/ &kp L /*;*/ &kp SEMI /*'*/ &kp SQT /*ENTER*/ &kp RET
 	/*LSHFT*/ &kp LSHFT /*Z*/ &kp Z /*X*/ &kp X /*C*/ &kp C /*V*/ &kp V  /*B*/ &kp B /*N*/ &kp N /*M*/ &kp M /*,*/ &kp COMMA /*.*/ &kp DOT /*FSLH*/ &kp FSLH /*RSHFT*/ &mt RSHFT UP
-	/*LCTRL*/ &kp LCTRL /*LWIN*/ &kp LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &lt 2 DOWN /*RCTRL*/ &mt RCTRL RIGHT
+	/*LCTRL*/ &kp LCTRL /*LWIN*/ &mt LGUI+F24 LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &lt 2 DOWN /*RCTRL*/ &mt RCTRL RIGHT
 			>;
 		};
 
