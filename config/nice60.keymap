@@ -71,15 +71,15 @@ media_layer {
 bindings = <
 // ------------------------------------------------------------------------------------------
 // | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
-// | TAB  |  🔉 |  🔇 |  🔊 |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
+// | TAB  |  Q  |  🔊 |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
 // | CAPS  | ⏮️  | ⏯️  | ⏭️  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-// | SHIFT   |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
+// | SHIFT   |  Z  | 🔉  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
 // | CTL   |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |   L1   |  CTL  |
 // ------------------------------------------------------------------------------------------
 /*ESC*/ &trans /*1*/ &trans /*2*/ &trans /*3*/ &trans /*4*/ &trans /*5*/ &trans /*6*/ &trans /*7*/ &trans /*8*/ &trans /*9*/ &trans /*0*/ &trans /*-*/ &trans /*=*/ &trans /*BACKSPACE*/ &trans
-/*TAB*/ &kp C_VOL_DN /*Q*/ &kp C_MUTE /*W*/ &kp C_VOL_UP /*E*/ &trans /*R*/ &trans /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
-/*CAPS*/ &kp C_PREV /*A*/ &kp C_PP /*S*/ &kp C_NEXT /*D*/ &trans /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
-/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
+/*TAB*/ &trans /*Q*/  &trans /*W*/ &kp C_VOL_UP /*E*/ &kp trans /*R*/ &trans /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
+/*CAPS*/ &trans /*A*/ &kp C_PREV /*S*/ &kp C_PP /*D*/ &kp C_NEXT /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
+/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &kp C_VOL_DN /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
 /*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &trans /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans
 >;
 };
