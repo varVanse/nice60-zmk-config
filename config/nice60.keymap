@@ -58,7 +58,7 @@
 // ------------------------------------------------------------------------------------------
 // |  ~  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 |   BKSP   |
 // |  DEL | HME |  🔼 | END | BKS |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-// |  L2   | ◀️  | 🔽  | ▶️  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
+// |  L2   | ◀️  | 🔽  | ▶️  |  F13  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
 // |  SHIFT  | F13 |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
 // |  CTL  |  WIN  |  ALT  |           SPACE/L3            |  ALT  | WIN/▶️ | L1/🔽 | CTL/▶️|
 // ------------------------------------------------------------------------------------------
@@ -66,8 +66,8 @@
 				bindings = <
 	/*ESC*/ &kp GRAVE /*1*/ &kp F1 /*2*/ &kp F2 /*3*/ &kp F3 /*4*/ &kp F4 /*5*/ &kp F5 /*6*/ &kp F6 /*7*/ &kp F7 /*8*/ &kp F8 /*9*/ &kp F9 /*0*/ &kp F10 /*-*/ &kp F11 /*=*/ &kp F12 /*BACKSPACE*/ &trans
 	/*TAB*/ &kp DEL /*Q*/ &kp HOME /*W*/ &kp UP /*E*/ &kp END /*R*/ &kp BSPC /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
-	/*CAPS*/ &trans /*A*/ &kp LEFT /*S*/ &kp DOWN /*D*/ &kp RIGHT /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
-	/*LSHFT*/ &kp F13 /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
+	/*CAPS*/ &trans /*A*/ &kp LEFT /*S*/ &kp DOWN /*D*/ &kp RIGHT /*F*/ &kp F13 /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
+	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
 	/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &lt 3 SPACE /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans 
 			>;
 		};
