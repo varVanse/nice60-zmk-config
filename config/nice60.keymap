@@ -63,7 +63,7 @@ bindings = <
 /*TAB*/ &kp DEL /*Q*/ &kp HOME /*W*/ &kp UP /*E*/ &kp END /*R*/ &kp BSPC /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
 /*CAPS*/ &trans /*A*/ &kp LEFT /*S*/ &kp DOWN /*D*/ &kp RIGHT /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
 /*LSHFT*/ &kp F13 /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
-/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &lt &lt 3 SPACE /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans
+/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &lt 3 SPACE /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans
 >;
 };
 
