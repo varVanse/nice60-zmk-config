@@ -28,6 +28,31 @@
 				bindings = <
 	/*ESC*/ &kp ESC /*1*/ &kp N1 /*2*/ &kp N2 /*3*/ &kp N3 /*4*/ &kp N4 /*5*/ &kp N5 /*6*/ &kp N6 /*7*/ &kp N7 /*8*/ &kp N8 /*9*/ &kp N9 /*0*/ &kp N0 /*-*/ &kp MINUS /*=*/ &kp EQUAL /*BACKSPACE*/ &kp BSPC
 	/*TAB*/ &kp TAB /*Q*/ &kp Q /*W*/ &kp W /*E*/ &kp E /*R*/ &kp R /*T*/ &kp T /*Y*/ &kp Y /*U*/ &kp U /*I*/ &kp I /*O*/ &kp O /*P*/ &kp P /*[*/ &kp LBKT /*]*/ &kp RBKT /*BSLH*/ &kp BSLH
+	/*CAPS*/ &kp CLCK /*A*/ &kp A /*S*/ &kp S /*D*/ &kp D /*F*/ &kp F /*G*/ &kp G /*H*/ &kp H /*J*/ &kp J /*K*/ &kp K /*L*/ &kp L /*;*/ &kp SEMI /*'*/ &kp SQT /*ENTER*/ &kp RET
+	/*LSHFT*/ &kp LSHFT /*Z*/ &kp Z /*X*/ &kp X /*C*/ &kp C /*V*/ &kp V /*B*/ &kp B /*N*/ &kp N /*M*/ &kp M /*,*/ &kp COMMA /*.*/ &kp DOT /*FSLH*/ &kp FSLH /*RSHFT*/ &mt RSHFT UP
+	/*LCTRL*/ &kp LCTRL /*LWIN*/ &kp LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &kp DOWN /*RCTRL*/ &mt RCTRL RIGHT 
+			>;
+		};
+};
+
+
+/*
+/ {
+		keymap {
+			compatible = "zmk,keymap";
+		
+			default_layer {
+// ------------------------------------------------------------------------------------------
+// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
+// |CAPS/L2|  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
+// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
+// |  CTL  |  WIN  |  ALT  |            SPACE              |  ALT  | WIN/▶️ | L1/🔽 | CTL/▶️|
+// ------------------------------------------------------------------------------------------
+
+				bindings = <
+	/*ESC*/ &kp ESC /*1*/ &kp N1 /*2*/ &kp N2 /*3*/ &kp N3 /*4*/ &kp N4 /*5*/ &kp N5 /*6*/ &kp N6 /*7*/ &kp N7 /*8*/ &kp N8 /*9*/ &kp N9 /*0*/ &kp N0 /*-*/ &kp MINUS /*=*/ &kp EQUAL /*BACKSPACE*/ &kp BSPC
+	/*TAB*/ &kp TAB /*Q*/ &kp Q /*W*/ &kp W /*E*/ &kp E /*R*/ &kp R /*T*/ &kp T /*Y*/ &kp Y /*U*/ &kp U /*I*/ &kp I /*O*/ &kp O /*P*/ &kp P /*[*/ &kp LBKT /*]*/ &kp RBKT /*BSLH*/ &kp BSLH
 	/*CAPS*/ &lt 2 CLCK /*A*/ &kp A /*S*/ &kp S /*D*/ &kp D /*F*/ &kp F /*G*/ &kp G /*H*/ &kp H /*J*/ &kp J /*K*/ &kp K /*L*/ &kp L /*;*/ &kp SEMI /*'*/ &kp SQT /*ENTER*/ &kp RET
 	/*LSHFT*/ &kp LSHFT /*Z*/ &kp Z /*X*/ &kp X /*C*/ &kp C /*V*/ &kp V /*B*/ &kp B /*N*/ &kp N /*M*/ &kp M /*,*/ &kp COMMA /*.*/ &kp DOT /*FSLH*/ &kp FSLH /*RSHFT*/ &mt RSHFT UP
 	/*LCTRL*/ &kp LCTRL /*LWIN*/ &kp LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &lt 1 DOWN /*RCTRL*/ &mt RCTRL RIGHT 
@@ -92,3 +117,4 @@
 		};
 	};
 };
+*/
