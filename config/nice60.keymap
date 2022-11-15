@@ -27,9 +27,27 @@
 				bindings = <
 	/*ESC*/ &kp ESC /*1*/ &kp N1 /*2*/ &kp N2 /*3*/ &kp N3 /*4*/ &kp N4 /*5*/ &kp N5 /*6*/ &kp N6 /*7*/ &kp N7 /*8*/ &kp N8 /*9*/ &kp N9 /*0*/ &kp N0 /*-*/ &kp MINUS /*=*/ &kp EQUAL /*BACKSPACE*/ &kp BSPC
 	/*TAB*/ &kp TAB /*Q*/ &kp Q /*W*/ &kp W /*E*/ &kp E /*R*/ &kp R /*T*/ &kp T /*Y*/ &kp Y /*U*/ &kp U /*I*/ &kp I /*O*/ &kp O /*P*/ &kp P /*[*/ &kp LBKT /*]*/ &kp RBKT /*BSLH*/ &kp BSLH
-	/*CAPS*/ &lt 2 CLCK /*A*/ &kp A /*S*/ &kp S /*D*/ &kp D /*F*/ &kp F /*G*/ &kp G /*H*/ &kp H /*J*/ &kp J /*K*/ &kp K /*L*/ &kp L /*;*/ &kp SEMI /*'*/ &kp SQT /*ENTER*/ &kp RET
+	/*CAPS*/ &lt 1 CLCK /*A*/ &kp A /*S*/ &kp S /*D*/ &kp D /*F*/ &kp F /*G*/ &kp G /*H*/ &kp H /*J*/ &kp J /*K*/ &kp K /*L*/ &kp L /*;*/ &kp SEMI /*'*/ &kp SQT /*ENTER*/ &kp RET
 	/*LSHFT*/ &kp LSHFT /*Z*/ &kp Z /*X*/ &kp X /*C*/ &kp C /*V*/ &kp V /*B*/ &kp B /*N*/ &kp N /*M*/ &kp M /*,*/ &kp COMMA /*.*/ &kp DOT /*FSLH*/ &kp FSLH /*RSHFT*/ &mt RSHFT UP
-	/*LCTRL*/ &kp LCTRL /*LWIN*/ &kp LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &lt 1 DOWN /*RCTRL*/ &mt RCTRL RIGHT 
+	/*LCTRL*/ &kp LCTRL /*LWIN*/ &kp LGUI /*LALT*/ &kp LALT /*SPACE*/ &kp SPACE /*RALT*/ &kp RALT /*RWIN*/ &mt RGUI LEFT /*FN*/ &lt 2 DOWN /*RCTRL*/ &mt RCTRL RIGHT 
+			>;
+		};
+		
+		caps_layer {
+/*------------------------------------------------------------------------------------------
+  |  ~  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 |   BKSP   |
+  |  DEL | HME |  🔼 | END | BKS |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
+  |  L2   | ◀️  | 🔽  | ▶️  | F13 |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
+  |  SHIFT  | F13 |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
+  |  CTL  |  WIN  |  ALT  |           SPACE/L3            |  ALT  | WIN/▶️ | L1/🔽 | CTL/▶️|
+  ------------------------------------------------------------------------------------------*/
+
+				bindings = <
+	/*ESC*/ &kp GRAVE /*1*/ &kp F1 /*2*/ &kp F2 /*3*/ &kp F3 /*4*/ &kp F4 /*5*/ &kp F5 /*6*/ &kp F6 /*7*/ &kp F7 /*8*/ &kp F8 /*9*/ &kp F9 /*0*/ &kp F10 /*-*/ &kp F11 /*=*/ &kp F12 /*BACKSPACE*/ &trans
+	/*TAB*/ &kp DEL /*Q*/ &kp HOME /*W*/ &kp UP /*E*/ &kp END /*R*/ &kp BSPC /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
+	/*CAPS*/ &trans /*A*/ &kp LEFT /*S*/ &kp DOWN /*D*/ &kp RIGHT /*F*/ &kp F12 /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
+	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
+	/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &lt 2 SPACE /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans 
 			>;
 		};
 
@@ -47,24 +65,6 @@
 	/*CAPS*/ &trans /*A*/ &kp C_PREV /*S*/ &kp C_VOL_DN /*D*/ &kp C_NEXT /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
 	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
 	/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &trans /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans 
-			>;
-		};
-
-			caps_layer {
-/*------------------------------------------------------------------------------------------
-  |  ~  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 |   BKSP   |
-  |  DEL | HME |  🔼 | END | BKS |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-  |  L2   | ◀️  | 🔽  | ▶️  | F13 |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-  |  SHIFT  | F13 |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
-  |  CTL  |  WIN  |  ALT  |           SPACE/L3            |  ALT  | WIN/▶️ | L1/🔽 | CTL/▶️|
-  ------------------------------------------------------------------------------------------*/
-
-				bindings = <
-	/*ESC*/ &kp GRAVE /*1*/ &kp F1 /*2*/ &kp F2 /*3*/ &kp F3 /*4*/ &kp F4 /*5*/ &kp F5 /*6*/ &kp F6 /*7*/ &kp F7 /*8*/ &kp F8 /*9*/ &kp F9 /*0*/ &kp F10 /*-*/ &kp F11 /*=*/ &kp F12 /*BACKSPACE*/ &trans
-	/*TAB*/ &kp DEL /*Q*/ &kp HOME /*W*/ &kp UP /*E*/ &kp END /*R*/ &kp BSPC /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
-	/*CAPS*/ &trans /*A*/ &kp LEFT /*S*/ &kp DOWN /*D*/ &kp RIGHT /*F*/ &kp F12 /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
-	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
-	/*LCTRL*/ &trans /*LWIN*/ &trans /*LALT*/ &trans /*SPACE*/ &lt 1 SPACE /*RALT*/ &trans /*RWIN*/ &trans /*FN*/ &trans /*RCTRL*/ &trans 
 			>;
 		};
 	};
