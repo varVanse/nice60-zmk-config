@@ -62,7 +62,7 @@
   ------------------------------------------------------------------------------------------*/
 
 				bindings = <
-	/*ESC*/ &bt BT_CLR /*1*/ &bt BT_SEL 0 /*2*/ &bt BT_SEL 1 /*3*/ &bt BT_SEL 2 /*4*/ BT_SEL 4 /*5*/ &trans /*6*/ &trans /*7*/ &trans /*8*/ &trans /*9*/ &trans /*0*/ &trans /*-*/ &trans /*=*/ &trans /*BACKSPACE*/ &bt BT_CLR
+	/*ESC*/ &bt BT_CLR /*1*/ &bt BT_SEL 0 /*2*/ &bt BT_SEL 1 /*3*/ &bt BT_SEL 2 /*4*/ &bt BT_SEL 4 /*5*/ &trans /*6*/ &trans /*7*/ &trans /*8*/ &trans /*9*/ &trans /*0*/ &trans /*-*/ &trans /*=*/ &trans /*BACKSPACE*/ &bt BT_CLR
 	/*TAB*/ &trans /*Q*/ &kp C_PP /*W*/ &kp C_VOL_UP /*E*/ &trans /*R*/ &trans /*T*/ &trans /*Y*/ &trans /*U*/ &trans /*I*/ &trans /*O*/ &trans /*P*/ &trans /*[*/ &trans /*]*/ &trans /*BSLH*/ &trans
 	/*CAPS*/ &trans /*A*/ &kp C_PREV /*S*/ &kp C_VOL_DN /*D*/ &kp C_NEXT /*F*/ &trans /*G*/ &trans /*H*/ &trans /*J*/ &trans /*K*/ &trans /*L*/ &trans /*;*/ &trans /*'*/ &trans /*ENTER*/ &trans
 	/*LSHFT*/ &trans /*Z*/ &trans /*X*/ &trans /*C*/ &trans /*V*/ &trans /*B*/ &trans /*N*/ &trans /*M*/ &trans /*,*/ &trans /*.*/ &trans /*FSLH*/ &trans /*RSHFT*/ &trans
