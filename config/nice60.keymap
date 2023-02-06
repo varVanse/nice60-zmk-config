@@ -11,6 +11,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+default_layer {
 bindings = <
 /*|ESC|*/&kp ESC/*   |➊|*/&kp N1/*|❷|*/&kp N2/*|❸|*/&kp N3/*|❹|*/&kp N4/*|❺|*/&kp N5/*|❻|*/&kp N6/*|❼|*/&kp N7/*|❽|*/&kp N8/*  |❾|*/&kp N9/* |⓿|*/&kp N0/* |-|*/&kp MINUS/*|=|*/&kp EQUAL/*| BACKSPACE |*/&kp BSPC
 /*|TAB |*/&kp TAB/*   |🆀|*/&kp Q/*|🆆|*/&kp W/* |🅴|*/&kp E/* |🆁|*/&kp R/*|🆃|*/&kp T/* |🆈|*/&kp Y/*|🆄|*/&kp U/* |🅸|*/&kp I/*   |🅾|*/&kp O/* |🅿|*/&kp P/*  |[|*/&kp LBKT/*|]|*/&kp RBKT/*     |   "|" |*/&kp BLSH
