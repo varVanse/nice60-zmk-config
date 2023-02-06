@@ -1,44 +1,48 @@
 /*
- * Copyright (c) 2021 Nick Winans
- *
- * SPDX-License-Identifier: MIT
- */
+* Copyright (c) 2021 Nick Winans
+*
+* SPDX-License-Identifier: MIT
+*/
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    keymap {
-        compatible = "zmk,keymap";
+keymap {
+compatible = "zmk,keymap";
+
 default_layer {
+
 bindings = <
 /*|ESC|*/&kp ESC/*   |➊|*/&kp N1/*|❷|*/&kp N2/*|❸|*/&kp N3/*|❹|*/&kp N4/*|❺|*/&kp N5/*|❻|*/&kp N6/*|❼|*/&kp N7/*|❽|*/&kp N8/*  |❾|*/&kp N9/* |⓿|*/&kp N0/* |-|*/&kp MINUS/*|=|*/&kp EQUAL/*| BACKSPACE |*/&kp BSPC
 /*|TAB |*/&kp TAB/*   |🆀|*/&kp Q/*|🆆|*/&kp W/* |🅴|*/&kp E/* |🆁|*/&kp R/*|🆃|*/&kp T/* |🆈|*/&kp Y/*|🆄|*/&kp U/* |🅸|*/&kp I/*   |🅾|*/&kp O/* |🅿|*/&kp P/*  |[|*/&kp LBKT/*|]|*/&kp RBKT/*     |   "|" |*/&kp BLSH
 /*|CAPS |*/&lt 1 CLCK/*|🅰|*/&kp A/*|🆂|*/&kp S/* |🅳|*/&kp D/* |🅵|*/&kp F* |🅶|*/&kp G/* |🅷|*/&kp H/*|🅹|*/&kp J/* |🅺|*/&kp K/*   |🅻|*/&kp L/* |;|*/&kp SEMI/*|'|*/&kp SQT/* |                  ENTER↩️ |*/&kp RET
 /*|LSHIFT|*/&kp LSHFT/* |🆉|*/&kp Z/*|🆇|*/&kp X/* |🅲|*/&kp C/* |🆅|*/&kp V/*|🅱|*/&kp B/* |🅽|*/&kp N/*|🅼|*/&kp M/* |,|*/&kp COMMA/*|.|*/&kp DOT/*|/|*/&kp FSLH/*|                               RSHIFT⤴️ |*/&mt RSHFT UP
-/*|LCTRL|*/&kp LCTRL/*|LWIN|*/&lt 2 LGUI/*|LALT|*/&kp LALT/*|                                  SPACE                 |*/&kp SPACE/*|RALT|*/&kp RALT/*|RWIN|*/&mt RGUI LEFT/*|L1|*/&lt 2 DOWN/*         |RCTRL|*/&mt RCTRL RIGHT 
-            >;
-        };
+/*|LCTRL|*/&kp LCTRL/*|LWIN|*/&lt 2 LGUI/*|LALT|*/&kp LALT/*|                                  SPACE                 |*/&kp SPACE/*|RALT|*/&kp RALT/*|RWIN|*/&mt RGUI LEFT/*|L1|*/&lt 2 DOWN/*         |RCTRL|*/&mt RCTRL RIGHT
+>;
+};
 
-        caps_layer {
+caps_layer {
+
 bindings = <
 /*|ESC|*/&kp GRAVE/*|➊|*/&kp F1/*   |❷|*/&kp F2/*  |❸|*/&kp F3/*   |❹|*/&kp F4/*    |❺|*/&kp F5/*|❻|*/&kp F6/*|❼|*/&kp F7/*|❽|*/&kp F8/*|❾|*/&kp F9/*|⓿|*/&kp F10/*|-|*/&kp F11/*|=|*/&kp F12/*| BACKSPACE |*/&trans
 /*|TAB |*/&kp DEL/*  |🆀|*/&kp HOME/*|🆆|*/&kp UP/*  |🅴|*/&kp END/*  |🆁|*/&kp BSPC/* |🆃|*/&trans/*|🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*    |  "|"  |*/&trans
 /*|CAPS |*/&trans/*   |🅰|*/&kp LEFT/*|🆂|*/&kp DOWN/*|🅳|*/&kp RIGHT/*|🅵|*/&kp PG_UP/*|🅶|*/&trans/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*|              ENTER↩️  |*/&trans
 /*|LSHIFT|*/&trans/*   |🆉|*/&trans/*  |🆇|*/&trans/*  |🅲|*/&trans/*   |🆅|*/&kp PG_DN/*|🅱|*/&trans/*|🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/*  |.|*/&trans/*|/|*/&trans/* |                         RSHIFT⤴️  |*/&trans
 /*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                     SPACE                                      |*/&trans/*| RALT |*/&trans/* | RWIN |*/&trans/*|   L1   |*/&trans/*| RCTRL  |*/&trans
-            >;
-        };
+>;
+};
 
-        media_layer {
+media_layer {
+
 bindings = <
 /*|ESC|*/&trans/*|➊|*/&trans/*    |❷|*/&trans/*       |❸|*/&trans/*    |️❹|*/&trans/*    |❺|*/&trans/*   |❻|*/&trans/* |❼|*/&trans/*|❽|*/&trans/*|❾|*/&trans/*|⓿|*/&trans/* |-|*/&trans/*|=|*/&trans/*| BACKSPACE |*/&bt BT_CLR
 /*|TAB |*/&trans/*|🆀|*/&kp C_PP/*  |🆆|*/&kp C_VOL_UP/*|🅴|*/&trans/*    |🆁|*/&trans/*   |🆃|*/&trans/*   |🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*   |   "|" |*/&trans
 /*|CAPS |*/&trans/*|🅰|*/&kp C_PREV/*|🆂|*/&kp C_VOL_DN/*|🅳|*/&kp C_NEXT/*|🅵|*/&trans/*   |🅶|*/&kp RG(G)/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*|             ENTER↩️  |*/&trans
 /*|LSHIFT|*/&trans/*|🆉|*/&trans/*    |🆇|*/&trans/*      |🅲|*/&trans/*    |🆅|*/&trans/*   |🅱|*/&trans/*   |🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/* |.|*/&trans/* |/|*/&trans/* |                        RSHIFT⤴️  |*/&trans
 /*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                         SPACE                                         |*/&trans/*| RALT |*/&trans/* | RWIN |*/&trans/*|   L1   |*/&trans/*| RCTRL |*/&trans
-            >;
-        };
-    };
+>;
+};
+};
 };
