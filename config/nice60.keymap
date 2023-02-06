@@ -18,7 +18,7 @@
   | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
   |CAPS/L2|  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |      ENTER   |
   |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  | SHIFT/🔼         |
-  |  CTL  |  WIN  |  ALT  |            SPACE              |  ALT  | WIN/◀️ | L1/🔽 |CTRL/▶️|
+  |  CTL  |  WIN/L3  |  ALT  |            SPACE              |  ALT  | WIN/◀️ | L1/🔽 |CTRL/▶️|
   ------------------------------------------------------------------------------------------*/
 
             bindings = <
@@ -26,7 +26,7 @@
     &kp TAB     &kp Q   &kp W     &kp E   &kp R   &kp T      &kp Y   &kp U   &kp I      &kp O     &kp P       &kp LBKT    &kp RBKT                 &kp BSLH
  &lt 1 CLCK     &kp A   &kp S     &kp D   &kp F   &kp G      &kp H   &kp J   &kp K      &kp L  &kp SEMI        &kp SQT                              &kp RET
   &kp LSHFT             &kp Z     &kp X   &kp C   &kp V      &kp B   &kp N   &kp M  &kp COMMA   &kp DOT       &kp FSLH                         &mt RSHFT UP
-  &kp LCTRL  &kp LGUI          &kp LALT                  &kp SPACE                             &kp RALT  &mt RGUI LEFT  &lt 2 DOWN          &mt RCTRL RIGHT
+  &kp LCTRL  &lt 3 LGUI          &kp LALT                  &kp SPACE                             &kp RALT  &mt RGUI LEFT  &lt 2 DOWN          &mt RCTRL RIGHT
             >;
         };
 
@@ -34,17 +34,16 @@
             /*------------------------------------------------------------------------------------------
   |  ~  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 |   BKSP   |
   |  DEL | HME |  🔼 | END | BKS |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-  |  L2   | ◀️  | 🔽  | ▶️  | F13 |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-  |  SHIFT  | F13 |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
+  |  L2   | ◀️  | 🔽  | ▶️  | PG_UP |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
+  |  SHIFT  | Z |  X  |  C  |  PG_DN  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
   |  CTL  |  WIN  |  ALT  |           SPACE/L3            |  ALT  | WIN/◀️ | L1/🔽 | CTL/▶️|
   ------------------------------------------------------------------------------------------*/
-
-            bindings = <
- &kp GRAVE    &kp F1    &kp F2     &kp F3    &kp F4  &kp F5       &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12          &trans
-   &kp DEL  &kp HOME    &kp UP    &kp END  &kp BSPC  &trans       &trans  &trans  &trans  &trans   &trans   &trans   &trans          &trans
-    &trans  &kp LEFT  &kp DOWN  &kp RIGHT   &lt 3 F  &trans       &trans  &trans  &trans  &trans   &trans   &trans                   &trans
-    &trans              &trans     &trans    &trans  &trans       &trans  &trans  &trans  &trans   &trans   &trans                   &trans
-    &trans    &trans               &trans                    &lt 2 SPACE                           &trans   &trans   &trans          &trans
+bindings = <
+/*|ESC|*/&kp GRAVE/*|1️⃣|*/&kp F1/*|2️⃣|*/&kp F2/*|3️⃣|*/&kp F3/*|4️⃣|*/&kp F4/*|5️⃣|*/&kp F5/*|6️⃣|*/&kp F6/*|7️⃣|*/&kp F7/*|8️⃣|*/&kp F8/*|9️⃣|*/&kp F9/*|0️⃣|*/&kp F10/*|-|*/&kp F11/*|=|*/&kp F12/*| BACKSPACE |*/&trans
+/*|TAB |*/&kp DEL/*  |🆀|*/&kp HOME/*|🆆|*/&kp UP/*  |🅴|*/&kp END/*  |🆁|*/&kp BSPC/* |🆃|*/&trans/*|🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*|"|"|*/&trans
+/*|CAPS |*/&trans/*   |🅰|*/&kp LEFT/*|🆂|*/&kp DOWN/*|🅳|*/&kp RIGHT/*|🅵|*/&kp PG_UP/*|🅶|*/&trans/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*| ENTER↩️       |*/&trans
+/*|LSHIFT|*/&trans/*   |🆉|*/&trans/*  |🆇|*/&trans/*  |🅲|*/&trans/*   |🆅|*/&kp PG_DN/*|🅱|*/&trans/*|🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/*  |.|*/&trans/*|/|*/&trans/* |        RSHIFT⤴️           |*/&trans
+/*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                  SPACE                                  |*/&lt 2 SPACE/*|RALT|*/&trans/*|RWIN|*/&trans/*|L1|*/&trans/*|   RCTRL    |*/&trans
             >;
         };
 
