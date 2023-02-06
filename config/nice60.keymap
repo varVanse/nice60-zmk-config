@@ -16,7 +16,7 @@ default_layer {
 
 bindings = <
 /*|ESC|*/&kp ESC/*   |➊|*/&kp N1/*|❷|*/&kp N2/*|❸|*/&kp N3/*|❹|*/&kp N4/*|❺|*/&kp N5/*|❻|*/&kp N6/*|❼|*/&kp N7/*|❽|*/&kp N8/*  |❾|*/&kp N9/* |⓿|*/&kp N0/* |-|*/&kp MINUS/*|=|*/&kp EQUAL/*| BACKSPACE |*/&kp BSPC
-/*|TAB |*/&kp TAB/*   |🆀|*/&kp Q/*|🆆|*/&kp W/* |🅴|*/&kp E/* |🆁|*/&kp R/*|🆃|*/&kp T/* |🆈|*/&kp Y/*|🆄|*/&kp U/* |🅸|*/&kp I/*   |🅾|*/&kp O/* |🅿|*/&kp P/*  |[|*/&kp LBKT/*|]|*/&kp RBKT/*     |   "|" |*/&kp BLSH
+/*|TAB |*/&kp TAB/*   |🆀|*/&kp Q/*|🆆|*/&kp W/* |🅴|*/&kp E/* |🆁|*/&kp R/*|🆃|*/&kp T/* |🆈|*/&kp Y/*|🆄|*/&kp U/* |🅸|*/&kp I/*   |🅾|*/&kp O/* |🅿|*/&kp P/*  |[|*/&kp LBKT/*|]|*/&kp RBKT/*     |   "|" |*/&kp BSLH
 /*|CAPS |*/&lt 1 CLCK/*|🅰|*/&kp A/*|🆂|*/&kp S/* |🅳|*/&kp D/* |🅵|*/&kp F* |🅶|*/&kp G/* |🅷|*/&kp H/*|🅹|*/&kp J/* |🅺|*/&kp K/*   |🅻|*/&kp L/* |;|*/&kp SEMI/*|'|*/&kp SQT/* |                  ENTER↩️ |*/&kp RET
 /*|LSHIFT|*/&kp LSHFT/* |🆉|*/&kp Z/*|🆇|*/&kp X/* |🅲|*/&kp C/* |🆅|*/&kp V/*|🅱|*/&kp B/* |🅽|*/&kp N/*|🅼|*/&kp M/* |,|*/&kp COMMA/*|.|*/&kp DOT/*|/|*/&kp FSLH/*|                               RSHIFT⤴️ |*/&mt RSHFT UP
 /*|LCTRL|*/&kp LCTRL/*|LWIN|*/&lt 2 LGUI/*|LALT|*/&kp LALT/*|                                  SPACE                 |*/&kp SPACE/*|RALT|*/&kp RALT/*|RWIN|*/&mt RGUI LEFT/*|L1|*/&lt 2 DOWN/*         |RCTRL|*/&mt RCTRL RIGHT
