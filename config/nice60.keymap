@@ -11,67 +11,32 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-
-        default_layer {
-            /*------------------------------------------------------------------------------------------
-  | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
-  | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-  |CAPS/L2|  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |      ENTER   |
-  |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  | SHIFT/🔼         |
-  |  CTL  |  WIN/L3  |  ALT  |            SPACE              |  ALT  | WIN/◀️ | L1/🔽 |CTRL/▶️|
-  ------------------------------------------------------------------------------------------*/
- 
-            bindings = <
-    &kp ESC    &kp N1  &kp N2    &kp N3  &kp N4  &kp N5     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0      &kp MINUS   &kp EQUAL                 &kp BSPC
-    &kp TAB     &kp Q   &kp W     &kp E   &kp R   &kp T      &kp Y   &kp U   &kp I      &kp O     &kp P       &kp LBKT    &kp RBKT                 &kp BSLH
- &lt 1 CLCK     &kp A   &kp S     &kp D   &kp F   &kp G      &kp H   &kp J   &kp K      &kp L  &kp SEMI        &kp SQT                              &kp RET
-  &kp LSHFT             &kp Z     &kp X   &kp C   &kp V      &kp B   &kp N   &kp M  &kp COMMA   &kp DOT       &kp FSLH                         &mt RSHFT UP
-  &kp LCTRL  &lt 3 LGUI          &kp LALT                  &kp SPACE                             &kp RALT  &mt RGUI LEFT  &lt 2 DOWN          &mt RCTRL RIGHT
+bindings = <
+/*|ESC|*/&kp ESC/*   |➊|*/&kp N1/*|❷|*/&kp N2/*|❸|*/&kp N3/*|❹|*/&kp N4/*|❺|*/&kp N5/*|❻|*/&kp N6/*|❼|*/&kp N7/*|❽|*/&kp N8/*  |❾|*/&kp N9/* |⓿|*/&kp N0/* |-|*/&kp MINUS/*|=|*/&kp EQUAL/*| BACKSPACE |*/&kp BSPC
+/*|TAB |*/&kp TAB/*   |🆀|*/&kp Q/*|🆆|*/&kp W/* |🅴|*/&kp E/* |🆁|*/&kp R/*|🆃|*/&kp T/* |🆈|*/&kp Y/*|🆄|*/&kp U/* |🅸|*/&kp I/*   |🅾|*/&kp O/* |🅿|*/&kp P/*  |[|*/&kp LBKT/*|]|*/&kp RBKT/*     |   "|" |*/&kp BLSH
+/*|CAPS |*/&lt 1 CLCK/*|🅰|*/&kp A/*|🆂|*/&kp S/* |🅳|*/&kp D/* |🅵|*/&kp F* |🅶|*/&kp G/* |🅷|*/&kp H/*|🅹|*/&kp J/* |🅺|*/&kp K/*   |🅻|*/&kp L/* |;|*/&kp SEMI/*|'|*/&kp SQT/* |                  ENTER↩️ |*/&kp RET
+/*|LSHIFT|*/&kp LSHFT/* |🆉|*/&kp Z/*|🆇|*/&kp X/* |🅲|*/&kp C/* |🆅|*/&kp V/*|🅱|*/&kp B/* |🅽|*/&kp N/*|🅼|*/&kp M/* |,|*/&kp COMMA/*|.|*/&kp DOT/*|/|*/&kp FSLH/*|                               RSHIFT⤴️ |*/&mt RSHFT UP
+/*|LCTRL|*/&kp LCTRL/*|LWIN|*/&lt 2 LGUI/*|LALT|*/&kp LALT/*|                                  SPACE                 |*/&kp SPACE/*|RALT|*/&kp RALT/*|RWIN|*/&mt RGUI LEFT/*|L1|*/&lt 2 DOWN/*         |RCTRL|*/&mt RCTRL RIGHT 
             >;
         };
 
         caps_layer {
-            /*------------------------------------------------------------------------------------------
-  |  ~  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 |   BKSP   |
-  |  DEL | HME |  🔼 | END | BKS |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-  |  L2   | ◀️  | 🔽  | ▶️  | PG_UP |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-  |  SHIFT  | Z |  X  |  C  |  PG_DN  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
-  |  CTL  |  WIN  |  ALT  |           SPACE/L3            |  ALT  | WIN/◀️ | L1/🔽 | CTL/▶️|
-  ------------------------------------------------------------------------------------------*/
 bindings = <
-/*|ESC|*/&kp GRAVE/*|1️⃣|*/&kp F1/*|2️⃣|*/&kp F2/*|3️⃣|*/&kp F3/*|4️⃣|*/&kp F4/*|5️⃣|*/&kp F5/*|6️⃣|*/&kp F6/*|7️⃣|*/&kp F7/*|8️⃣|*/&kp F8/*|9️⃣|*/&kp F9/*|0️⃣|*/&kp F10/*|-|*/&kp F11/*|=|*/&kp F12/*| BACKSPACE |*/&trans
-/*|TAB |*/&kp DEL/*  |🆀|*/&kp HOME/*|🆆|*/&kp UP/*  |🅴|*/&kp END/*  |🆁|*/&kp BSPC/* |🆃|*/&trans/*|🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*|"|"|*/&trans
-/*|CAPS |*/&trans/*   |🅰|*/&kp LEFT/*|🆂|*/&kp DOWN/*|🅳|*/&kp RIGHT/*|🅵|*/&kp PG_UP/*|🅶|*/&trans/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*| ENTER↩️       |*/&trans
-/*|LSHIFT|*/&trans/*   |🆉|*/&trans/*  |🆇|*/&trans/*  |🅲|*/&trans/*   |🆅|*/&kp PG_DN/*|🅱|*/&trans/*|🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/*  |.|*/&trans/*|/|*/&trans/* |        RSHIFT⤴️           |*/&trans
-/*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                  SPACE                                  |*/&lt 2 SPACE/*|RALT|*/&trans/*|RWIN|*/&trans/*|L1|*/&trans/*|   RCTRL    |*/&trans
+/*|ESC|*/&kp GRAVE/*|➊|*/&kp F1/*   |❷|*/&kp F2/*  |❸|*/&kp F3/*   |❹|*/&kp F4/*    |❺|*/&kp F5/*|❻|*/&kp F6/*|❼|*/&kp F7/*|❽|*/&kp F8/*|❾|*/&kp F9/*|⓿|*/&kp F10/*|-|*/&kp F11/*|=|*/&kp F12/*| BACKSPACE |*/&trans
+/*|TAB |*/&kp DEL/*  |🆀|*/&kp HOME/*|🆆|*/&kp UP/*  |🅴|*/&kp END/*  |🆁|*/&kp BSPC/* |🆃|*/&trans/*|🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*    |  "|"  |*/&trans
+/*|CAPS |*/&trans/*   |🅰|*/&kp LEFT/*|🆂|*/&kp DOWN/*|🅳|*/&kp RIGHT/*|🅵|*/&kp PG_UP/*|🅶|*/&trans/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*|              ENTER↩️  |*/&trans
+/*|LSHIFT|*/&trans/*   |🆉|*/&trans/*  |🆇|*/&trans/*  |🅲|*/&trans/*   |🆅|*/&kp PG_DN/*|🅱|*/&trans/*|🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/*  |.|*/&trans/*|/|*/&trans/* |                         RSHIFT⤴️  |*/&trans
+/*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                     SPACE                                      |*/&trans/*| RALT |*/&trans/* | RWIN |*/&trans/*|   L1   |*/&trans/*| RCTRL  |*/&trans
             >;
         };
 
         media_layer {
-            /*------------------------------------------------------------------------------------------
-  |BTCLR| BT0 | BT1 | BT2 | BT3 |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |  BTCLR   |
-  | TAB  | ⏯️  | 🔉  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-  | CAPS  | ⏮️  | 🔉  | ️⏭️  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-  | SHIFT   |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
-  | CTL   |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |   L1   |  CTRL |
-  ------------------------------------------------------------------------------------------*/
-
-            bindings = <
- &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &bt BT_CLR
-     &trans  &kp RA(C_VOL_UP)  &kp C_VOL_UP  &kp RC(C_VOL_UP)        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans
-     &trans  &kp RA(C_VOL_DN)  &kp C_VOL_DN  &kp RC(C_VOL_DN)        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans
-     &trans                      &kp C_PREV          &kp C_PP    &kp C_NEXT  &trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans
-     &trans            &trans                          &trans                        &trans                          &trans  &trans  &trans              &trans
-            >;
-        };
-
-        page_layer {
-            bindings = <
- &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
- &trans  &trans    &kp PAGE_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
- &trans  &trans  &kp PAGE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans
- &trans                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans
- &trans  &trans                 &trans                  &trans                          &trans  &trans  &trans          &trans
+bindings = <
+/*|ESC|*/&trans/*|➊|*/&trans/*    |❷|*/&trans/*       |❸|*/&trans/*    |️❹|*/&trans/*    |❺|*/&trans/*   |❻|*/&trans/* |❼|*/&trans/*|❽|*/&trans/*|❾|*/&trans/*|⓿|*/&trans/* |-|*/&trans/*|=|*/&trans/*| BACKSPACE |*/&bt BT_CLR
+/*|TAB |*/&trans/*|🆀|*/&kp C_PP/*  |🆆|*/&kp C_VOL_UP/*|🅴|*/&trans/*    |🆁|*/&trans/*   |🆃|*/&trans/*   |🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*   |   "|" |*/&trans
+/*|CAPS |*/&trans/*|🅰|*/&kp C_PREV/*|🆂|*/&kp C_VOL_DN/*|🅳|*/&kp C_NEXT/*|🅵|*/&trans/*   |🅶|*/&kp RG(G)/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*|             ENTER↩️  |*/&trans
+/*|LSHIFT|*/&trans/*|🆉|*/&trans/*    |🆇|*/&trans/*      |🅲|*/&trans/*    |🆅|*/&trans/*   |🅱|*/&trans/*   |🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/* |.|*/&trans/* |/|*/&trans/* |                        RSHIFT⤴️  |*/&trans
+/*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                         SPACE                                         |*/&trans/*| RALT |*/&trans/* | RWIN |*/&trans/*|   L1   |*/&trans/*| RCTRL |*/&trans
             >;
         };
     };
