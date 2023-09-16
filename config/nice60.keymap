@@ -2,6 +2,18 @@
 * Copyright (c) 2021 Nick Winans
 *
 * SPDX-License-Identifier: MIT
+*
+*============================================================================================================================================================
+*【 ESC 】0≋ 【 1 】1≋ 【 2 】2≋ 【 3 】3≋ 【 4 】4≋ 【 5 】5≋ 【 6 】6≋ 【 7 】7≋ 【 8 】8≋ 【 9 】9≋ 【 0 】10≋ 【 - 】11≋ 【 = 】12≋ 【____BACKSPACE】13≋
+*
+*【 TAB 】14≋ 【 Q 】15≋ 【 W 】16≋ 【 E 】17≋ 【 R 】18≋ 【 T 】19≋ 【 Y 】20≋ 【 U 】21≋ 【 I 】22≋ 【 O 】23≋ 【 P 】24≋ 【 [ 】25≋ 【 ] 】26≋ 【 \ 】27≋
+*
+*【 CAPS 】28≋ 【 A 】29≋ 【 S 】30≋ 【 D 】31≋ 【 F 】32≋ 【 G 】33≋ 【 H 】34≋ 【 J 】35≋ 【 K 】36≋ 【 L 】37≋ 【 ; 】38≋ 【 ' 】39≋ 【_______RETURN】40≋
+*
+*【 SHIFT 】41≋ 【 Z 】42≋ 【 X 】43≋ 【 C 】44≋ 【 V 】45≋ 【 B 】46≋ 【 N 】47≋ 【 M 】48≋ 【 , 】49≋ 【 . 】50≋ 【 / 】51≋ 【__________________SHIFT】52≋
+*
+*【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
+*=============================================================================================================================================================
 */
 
 #include <behaviors.dtsi>
@@ -13,37 +25,65 @@ keymap {
 compatible = "zmk,keymap";
 
 default_layer {
-
 bindings = <
-/* 0|ESC|*/&kp ESC/*  |➊|*/&kp N1/*|❷|*/&kp N2/*|❸|*/&kp N3/*|❹|*/&kp N4/*|❺|*/&kp N5/*|❻|*/&kp N6/*|❼|*/&kp N7/*|❽|*/&kp N8/*  |❾|*/&kp N9/* |⓿|*/&kp N0/* |-|*/&kp MINUS/*|=|*/&kp EQUAL/*| BACKSPACE |*/&kp BSPC
-/*14|TAB |*/&kp TAB/*   |🆀|*/&kp Q/*|🆆|*/&kp W/* |🅴|*/&kp E/* |🆁|*/&kp R/*|🆃|*/&kp T/* |🆈|*/&kp Y/*|🆄|*/&kp U/* |🅸|*/&kp I/*   |🅾|*/&kp O/* |🅿|*/&kp P/*  |[|*/&kp LBKT/*|]|*/&kp RBKT/*     |   "|" |*/&kp BSLH
-/*28|CAPS |*/&lt 1 CLCK/*|🅰|*/&kp A/*|🆂|*/&kp S/* |🅳|*/&kp D/* |🅵|*/&kp F/* |🅶|*/&kp G/* |🅷|*/&kp H/*|🅹|*/&kp J/* |🅺|*/&kp K/*   |🅻|*/&kp L/* |;|*/&kp SEMI/*|'|*/&kp SQT/* |                  ENTER↩️ |*/&kp RET
-/*41|LSHIFT|*/&kp LSHFT/* |🆉|*/&kp Z/*|🆇|*/&kp X/* |🅲|*/&kp C/* |🆅|*/&kp V/* |🅱|*/&kp B/* |🅽|*/&kp N/*|🅼|*/&kp M/* |,|*/&kp COMMA/*|.|*/&kp DOT/*|/|*/&kp FSLH/*|                               RSHIFT⤴️ |*/&mt RSHFT UP
-/*53|LCTRL|*/&kp LCTRL/*|LWIN|&lt 2 LGUI*/&kp F24/*|LALT|*/&kp LALT/*|                                  SPACE                 |*/&kp SPACE/*|RALT|*/&kp RALT/*|RWIN|*/&mt RGUI LEFT/*|L1|*/&lt 1 DOWN/*         |RCTRL|*/&mt RCTRL RIGHT
+/*
+【 ESC 】0≋ 【 1 】1≋ 【 2 】2≋ 【 3 】3≋ 【 4 】4≋ 【 5 】5≋ 【 6 】6≋ 【 7 】7≋ 【 8 】8≋ 【 9 】9≋ 【 0 】10≋ 【 - 】11≋ 【 = 】12≋ 【____BACKSPACE】13≋
+*/ &kp ESC   &kp N1    &kp N2    &kp N3     &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp MINUS  &kp EQUAL       &kp BSPC
+/*
+【 TAB 】14≋ 【 Q 】15≋ 【 W 】16≋ 【 E 】17≋ 【 R 】18≋ 【 T 】19≋ 【 Y 】20≋ 【 U 】21≋ 【 I 】22≋ 【 O 】23≋ 【 P 】24≋ 【 [ 】25≋ 【 ] 】26≋ 【 \ 】27≋ 
+*/ &kp TAB    &kp Q      &kp W      &kp E       &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp LBKT    &kp RBKT   &kp BSLH
+/*
+【 CAPS 】28≋ 【 A 】29≋ 【 S 】30≋ 【 D 】31≋ 【 F 】32≋ 【 G 】33≋ 【 H 】34≋ 【 J 】35≋ 【 K 】36≋ 【 L 】37≋ 【 ; 】38≋ 【 ' 】39≋ 【_______RETURN】40≋ 
+*/&lt 1 CLCK   &kp A      &kp S      &kp D       &kp F      &kp G      &kp H      &kp J      &kp K       &kp L      &kp SEMI   &kp SQT            &kp RET
+/*
+【 SHIFT 】41≋ 【 Z 】42≋ 【 X 】43≋ 【 C 】44≋ 【 V 】45≋ 【 B 】46≋ 【 N 】47≋ 【 M 】48≋ 【 , 】49≋ 【 . 】50≋ 【 / 】51≋ 【__________________SHIFT】52≋
+*/ &kp LSHFT     &kp Z      &kp X      &kp C       &kp V      &kp B      &kp N      &kp M      &kp COMMA   &kp DOT    &kp FSLH                  &mt RSHFT UP
+/*
+【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
+*/ &kp LCTRL      &kp F24        &kp LALT                          &kp SPACE                          &kp RALT      &mt RGUI LEFT  &lt 1 DOWN   &mt RCTRL RIGHT
 >;
 };
 
 caps_layer {
-
 bindings = <
-/*|ESC|*/&kp GRAVE/*|➊|*/&kp F1/*   |❷|*/&kp F2/*  |❸|*/&kp F3/*   |❹|*/&kp F4/*    |❺|*/&kp F5/*|❻|*/&kp F6/*|❼|*/&kp F7/*|❽|*/&kp F8/*|❾|*/&kp F9/*|⓿|*/&kp F10/*|-|*/&kp F11/*|=|*/&kp F12/*| BACKSPACE |*/&trans
-/*|TAB |*/&kp DEL/*  |🆀|*/&kp HOME/*|🆆|*/&kp UP/*  |🅴|*/&kp END/*  |🆁|*/&kp BSPC/* |🆃|*/&trans/*|🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*    |  "|"  |*/&trans
-/*|CAPS |*/&trans/*   |🅰|*/&kp LEFT/*|🆂|*/&kp DOWN/*|🅳|*/&kp RIGHT/*|🅵|*/&kp PG_UP/*|🅶|*/&trans/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*|              ENTER↩️  |*/&trans
-/*|LSHIFT|*/&trans/*   |🆉|*/&trans/*  |🆇|*/&trans/*  |🅲|*/&trans/*   |🆅|*/&kp PG_DN/*|🅱|*/&trans/*|🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/*  |.|*/&trans/*|/|*/&trans/* |                         RSHIFT⤴️  |*/&trans
-/*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                     SPACE                                      |*/&trans/*| RALT |*/&trans/* | RWIN |*/&trans/*|   L1   |*/&trans/*| RCTRL  |*/&trans
+/*
+【 ESC 】0≋ 【 1 】1≋ 【 2 】2≋ 【 3 】3≋ 【 4 】4≋ 【 5 】5≋ 【 6 】6≋ 【 7 】7≋ 【 8 】8≋ 【 9 】9≋ 【 0 】10≋ 【 - 】11≋ 【 = 】12≋ 【____BACKSPACE】13≋
+*/ &kp GRAVE    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10    &kp F11    &kp F12         &trans
+/*
+【 TAB 】14≋ 【 Q 】15≋ 【 W 】16≋ 【 E 】17≋ 【 R 】18≋ 【 T 】19≋ 【 Y 】20≋ 【 U 】21≋ 【 I 】22≋ 【 O 】23≋ 【 P 】24≋ 【 [ 】25≋ 【 ] 】26≋ 【 \ 】27≋ 
+*/ &kp DEL    &kp HOME    &kp UP     &kp END    &kp BSPC   &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans
+/*
+【 CAPS 】28≋ 【 A 】29≋ 【 S 】30≋ 【 D 】31≋ 【 F 】32≋ 【 G 】33≋ 【 H 】34≋ 【 J 】35≋ 【 K 】36≋ 【 L 】37≋ 【 ; 】38≋ 【 ' 】39≋ 【_______RETURN】40≋ 
+*/ &trans      &kp LEFT    &kp DOWN   &kp RIGHT  &kp PG_UP  &trans     &trans     &trans     &trans      &trans     &trans     &trans             &trans
+/*
+【 SHIFT 】41≋ 【 Z 】42≋ 【 X 】43≋ 【 C 】44≋ 【 V 】45≋ 【 B 】46≋ 【 N 】47≋ 【 M 】48≋ 【 , 】49≋ 【 . 】50≋ 【 / 】51≋ 【__________________SHIFT】52≋
+*/ &trans         &trans     &trans     &trans     &kp PG_DN  &trans     &trans     &trans      &trans     &trans     &trans                        &trans
+/*
+【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
+*/ &trans        &trans          &trans                           &trans                             &trans         &trans         &trans           &trans
 >;
 };
 
 media_layer {
-
 bindings = <
-/*|ESC|*/&trans/*|➊|*/&trans/*    |❷|*/&trans/*       |❸|*/&trans/*    |️❹|*/&trans/*    |❺|*/&trans/*   |❻|*/&trans/* |❼|*/&trans/*|❽|*/&trans/*|❾|*/&trans/*|⓿|*/&trans/* |-|*/&trans/*|=|*/&trans/*| BACKSPACE |*/&trans
-/*|TAB |*/&trans/*|🆀|*/&kp C_PP/*  |🆆|*/&kp C_VOL_UP/*|🅴|*/&trans/*    |🆁|*/&trans/*   |🆃|*/&trans/*   |🆈|*/&trans/*|🆄|*/&trans/*|🅸|*/&trans/*|🅾|*/&trans/*|🅿|*/&trans/*|[|*/&trans/*|]|*/&trans/*   |   "|" |*/&trans
-/*|CAPS |*/&kp CLCK/*|🅰|*/&kp C_PREV/*|🆂|*/&kp C_VOL_DN/*|🅳|*/&kp C_NEXT/*|🅵|*/&trans/*   |🅶|*/&kp RG(G)/*|🅷|*/&trans/*|🅹|*/&trans/*|🅺|*/&trans/*|🅻|*/&trans/*|;|*/&trans/* |'|*/&trans/*|             ENTER↩️  |*/&trans
-/*|LSHIFT|*/&trans/*|🆉|*/&trans/*    |🆇|*/&trans/*      |🅲|*/&trans/*    |🆅|*/&trans/*   |🅱|*/&trans/*   |🅽|*/&trans/*|🅼|*/&trans/*|,|*/&trans/* |.|*/&trans/* |/|*/&trans/* |                        RSHIFT⤴️  |*/&trans
-/*|LCTRL|*/&trans/*|LWIN|*/&trans/*|LALT|*/&trans/*|                                         SPACE                                         |*/&trans/*| RALT |*/&trans/* | RWIN |*/&trans/*|   L1   |*/&trans/*| RCTRL |*/&trans
+/*
+【 ESC 】0≋ 【 1 】1≋ 【 2 】2≋ 【 3 】3≋ 【 4 】4≋ 【 5 】5≋ 【 6 】6≋ 【 7 】7≋ 【 8 】8≋ 【 9 】9≋ 【 0 】10≋ 【 - 】11≋ 【 = 】12≋ 【____BACKSPACE】13≋
+*/ &trans    &trans     &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans     &trans          &trans
+/*
+【 TAB 】14≋ 【 Q 】15≋ 【 W 】16≋ 【 E 】17≋ 【 R 】18≋ 【 T 】19≋ 【 Y 】20≋ 【 U 】21≋ 【 I 】22≋ 【 O 】23≋ 【 P 】24≋ 【 [ 】25≋ 【 ] 】26≋ 【 \ 】27≋ 
+*/ &trans     &kp C_PP  &kp C_VOL_UP  &trans    &trans     &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans
+/*
+【 CAPS 】28≋ 【 A 】29≋ 【 S 】30≋ 【 D 】31≋ 【 F 】32≋ 【 G 】33≋ 【 H 】34≋ 【 J 】35≋ 【 K 】36≋ 【 L 】37≋ 【 ; 】38≋ 【 ' 】39≋ 【_______RETURN】40≋ 
+*/ &kp CLCK   &kp C_PREV &kp C_VOL_DN &kp C_NEXT &trans     &kp RG     &trans     &trans     &trans      &trans     &trans     &trans             &trans
+/*
+【 SHIFT 】41≋ 【 Z 】42≋ 【 X 】43≋ 【 C 】44≋ 【 V 】45≋ 【 B 】46≋ 【 N 】47≋ 【 M 】48≋ 【 , 】49≋ 【 . 】50≋ 【 / 】51≋ 【__________________SHIFT】52≋
+*/ &trans       &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans     &trans     &trans                         &trans
+/*
+【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
+*/ &trans        &trans         &trans                            &trans                             &trans         &trans         &trans        &trans
 >;
 };
+
 };
 
 combos {
