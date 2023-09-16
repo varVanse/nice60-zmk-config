@@ -19,7 +19,7 @@ bindings = <
 /*14|TAB |*/&kp TAB/*   |🆀|*/&kp Q/*|🆆|*/&kp W/* |🅴|*/&kp E/* |🆁|*/&kp R/*|🆃|*/&kp T/* |🆈|*/&kp Y/*|🆄|*/&kp U/* |🅸|*/&kp I/*   |🅾|*/&kp O/* |🅿|*/&kp P/*  |[|*/&kp LBKT/*|]|*/&kp RBKT/*     |   "|" |*/&kp BSLH
 /*28|CAPS |*/&lt 1 CLCK/*|🅰|*/&kp A/*|🆂|*/&kp S/* |🅳|*/&kp D/* |🅵|*/&kp F/* |🅶|*/&kp G/* |🅷|*/&kp H/*|🅹|*/&kp J/* |🅺|*/&kp K/*   |🅻|*/&kp L/* |;|*/&kp SEMI/*|'|*/&kp SQT/* |                  ENTER↩️ |*/&kp RET
 /*41|LSHIFT|*/&kp LSHFT/* |🆉|*/&kp Z/*|🆇|*/&kp X/* |🅲|*/&kp C/* |🆅|*/&kp V/* |🅱|*/&kp B/* |🅽|*/&kp N/*|🅼|*/&kp M/* |,|*/&kp COMMA/*|.|*/&kp DOT/*|/|*/&kp FSLH/*|                               RSHIFT⤴️ |*/&mt RSHFT UP
-/*53|LCTRL|*/&kp LCTRL/*|LWIN|*/&lt 2 LGUI/*|LALT|*/&kp LALT/*|                                  SPACE                 |*/&kp SPACE/*|RALT|*/&kp RALT/*|RWIN|*/&mt RGUI LEFT/*|L1|*/&lt 1 DOWN/*         |RCTRL|*/&mt RCTRL RIGHT
+/*53|LCTRL|*/&kp LCTRL/*|LWIN|&lt 2 LGUI*/&kp F24/*|LALT|*/&kp LALT/*|                                  SPACE                 |*/&kp SPACE/*|RALT|*/&kp RALT/*|RWIN|*/&mt RGUI LEFT/*|L1|*/&lt 1 DOWN/*         |RCTRL|*/&mt RCTRL RIGHT
 >;
 };
 
