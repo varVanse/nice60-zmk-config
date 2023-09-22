@@ -40,7 +40,7 @@ bindings = <
 */ &kp LSHFT     &kp Z      &kp X      &kp C       &kp V      &kp B      &kp N      &kp M      &kp COMMA   &kp DOT    &kp FSLH                  &mt RSHFT UP
 /*
 【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
-*/ &kp LCTRL      &kp F24        &kp LALT                          &kp SPACE                          &kp RALT      &mt RGUI LEFT  &lt 1 DOWN   &mt RCTRL RIGHT
+*/ &kp LCTRL     &kp LGUI       &kp LALT                          &kp SPACE                        &kp RALT       &mt RGUI LEFT  &lt 1 DOWN    &mt RCTRL RIGHT
 >;
 };
 
