@@ -2,4 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: varVanse/zmk/.github/workflows/build-user-config.yml@main
+    uses: varVanse/zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    
