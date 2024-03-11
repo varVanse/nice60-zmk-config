@@ -1,11 +1,10 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-#      url-base: https://github.com/zmkfirmware
+    - name: varvanse
      url-base: https://github.com/varVanse
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: varVanse
       revision: main
       import: app/west.yml
   self:
