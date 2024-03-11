@@ -60,7 +60,7 @@ bindings = <
 */ &trans         &trans     &trans     &trans     &kp PG_DN  &trans     &trans     &trans      &trans     &trans     &trans                        &trans
 /*
 【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
-*/ &trans        &trans          &trans                           &trans                             &trans         &trans         &trans           &trans
+*/ &trans         &mo 2         &trans                           &trans                             &trans         &trans         &trans           &trans
 >;
 };
 
@@ -74,7 +74,7 @@ bindings = <
 */ &trans     &kp C_PP  &kp C_VOL_UP  &trans    &trans     &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans
 /*
 【 CAPS 】28≋ 【 A 】29≋ 【 S 】30≋ 【 D 】31≋ 【 F 】32≋ 【 G 】33≋ 【 H 】34≋ 【 J 】35≋ 【 K 】36≋ 【 L 】37≋ 【 ; 】38≋ 【 ' 】39≋ 【_______RETURN】40≋ 
-*/ &kp CLCK   &kp C_PREV &kp C_VOL_DN &kp C_NEXT &trans     &kp RG(G)     &trans     &trans     &trans      &trans     &trans     &trans             &trans
+*/ &trans   &kp C_PREV &kp C_VOL_DN &kp C_NEXT &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans             &trans
 /*
 【 SHIFT 】41≋ 【 Z 】42≋ 【 X 】43≋ 【 C 】44≋ 【 V 】45≋ 【 B 】46≋ 【 N 】47≋ 【 M 】48≋ 【 , 】49≋ 【 . 】50≋ 【 / 】51≋ 【__________________SHIFT】52≋
 */ &trans       &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans     &trans     &trans                         &trans
@@ -90,8 +90,8 @@ combos {
         compatible = "zmk,combos";
         combo_bt {
             layers = <0>;
-            timeout-ms = <200>;
-            key-positions = <0 53 60>;
+            timeout-ms = <400>;
+            key-positions = <0 13 53 60>;
             bindings = <&bt BT_CLR>;
         };
     };
