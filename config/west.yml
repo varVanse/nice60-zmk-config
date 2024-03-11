@@ -1,7 +1,7 @@
 manifest:
   remotes:
-    - name: varvanse
-     url-base: https://github.com/varVanse
+    - name: varVanse
+      url-base: https://github.com/varVanse
   projects:
     - name: zmk
       remote: varVanse
