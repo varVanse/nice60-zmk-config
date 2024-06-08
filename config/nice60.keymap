@@ -89,9 +89,9 @@ bindings = <
 combos {
         compatible = "zmk,combos";
         combo_bt {
-            layers = <0>;
-            timeout-ms = <400>;
-            key-positions = <0 13 53 60>;
+            layers = <1>;
+            timeout-ms = <200>;
+            key-positions = <13 60>;
             bindings = <&bt BT_CLR>;
         };
     };
