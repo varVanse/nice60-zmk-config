@@ -51,7 +51,7 @@ bindings = <
 */ &kp GRAVE    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10    &kp F11    &kp F12         &trans
 /*
 【 TAB 】14≋ 【 Q 】15≋ 【 W 】16≋ 【 E 】17≋ 【 R 】18≋ 【 T 】19≋ 【 Y 】20≋ 【 U 】21≋ 【 I 】22≋ 【 O 】23≋ 【 P 】24≋ 【 [ 】25≋ 【 ] 】26≋ 【 \ 】27≋ 
-*/ &kp DEL    &kp HOME    &kp UP     &kp END    &kp BSPC   &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans
+*/ &kp DEL    &kp HOME    &kp UP     &kp END    &kp BSPC   &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &kp CARET
 /*
 【 CAPS 】28≋ 【 A 】29≋ 【 S 】30≋ 【 D 】31≋ 【 F 】32≋ 【 G 】33≋ 【 H 】34≋ 【 J 】35≋ 【 K 】36≋ 【 L 】37≋ 【 ; 】38≋ 【 ' 】39≋ 【_______RETURN】40≋ 
 */ &trans      &kp LEFT    &kp DOWN   &kp RIGHT  &kp PG_UP  &trans     &trans     &trans     &trans      &trans     &trans     &trans             &trans
