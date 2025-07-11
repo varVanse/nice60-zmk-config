@@ -60,7 +60,7 @@ bindings = <
 */ &trans         &trans     &trans     &trans     &kp PG_DN  &trans     &trans     &trans      &trans     &trans     &trans                        &trans
 /*
 【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
-*/ &trans         &mo 2         &trans                           &trans                             &trans         &trans         &trans           &trans
+*/ &trans         &mo 2         &trans                           &trans                             &trans         &trans         &trans           &mo 3
 >;
 };
 
@@ -84,15 +84,26 @@ bindings = <
 >;
 };
 
+bt_layer {
+bindings = <
+/*
+【 ESC 】0≋  【 1 】1≋       【 2 】2≋      【 3 】3≋       【 4 】4≋       【 5 】5≋ 【 6 】6≋ 【 7 】7≋ 【 8 】8≋ 【 9 】9≋ 【 0 】10≋ 【 - 】11≋ 【 = 】12≋ 【____BACKSPACE】13≋
+*/ &trans    &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &trans   &trans   &trans   &trans    &trans    &trans    &trans    &trans       &bt BT_CLR
+/*
+【 TAB 】14≋ 【 Q 】15≋ 【 W 】16≋ 【 E 】17≋ 【 R 】18≋ 【 T 】19≋ 【 Y 】20≋ 【 U 】21≋ 【 I 】22≋ 【 O 】23≋ 【 P 】24≋ 【 [ 】25≋ 【 ] 】26≋ 【 \ 】27≋ 
+*/ &trans     &trans    &trans    &trans    &trans     &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans
+/*
+【 CAPS 】28≋ 【 A 】29≋ 【 S 】30≋ 【 D 】31≋ 【 F 】32≋ 【 G 】33≋ 【 H 】34≋ 【 J 】35≋ 【 K 】36≋ 【 L 】37≋ 【 ; 】38≋ 【 ' 】39≋ 【_______RETURN】40≋ 
+*/ &trans     &trans    &trans     &trans    &trans     &trans     &trans     &trans     &trans      &trans     &trans     &trans             &trans
+/*
+【 SHIFT 】41≋ 【 Z 】42≋ 【 X 】43≋ 【 C 】44≋ 【 V 】45≋ 【 B 】46≋ 【 N 】47≋ 【 M 】48≋ 【 , 】49≋ 【 . 】50≋ 【 / 】51≋ 【__________________SHIFT】52≋
+*/ &trans       &trans     &trans     &trans     &trans      &trans     &trans     &trans     &trans     &trans     &trans                         &trans
+/*
+【  CTRL  】53≋ 【  WIN  】54≋ 【  ALT  】55≋ 【_________________S_P_A_C_E_________________】56≋ 【  ALT  】57≋ 【  WIN  】58≋ 【  FN  】59≋ 【  CTRL  】60≋
+*/ &trans        &trans         &trans                            &trans                             &trans         &trans         &trans        &trans
+>;
 };
 
-combos {
-        compatible = "zmk,combos";
-        combo_bt {
-            layers = <1>;
-            timeout-ms = <200>;
-            key-positions = <13 60>;
-            bindings = <&bt BT_CLR>;
-        };
-    };
+};
+
 };
